@@ -128,7 +128,7 @@ hr {
 	background-color: #3c4148;
 	color: #fff;
 }
-#slider > div {
+#slider  .slider_wrapper {
 	background-repeat: no-repeat;
 	background-position: center center;
 	height: 446px;
@@ -210,7 +210,6 @@ nav.footer_menu ul li {
 	background-color: #fff;
 	width: 222px;
 	height: 122px;
-	margin: 0 auto;
 }
 nav.footer_menu ul li a {
 	background-position: center left;

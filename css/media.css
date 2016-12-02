@@ -35,6 +35,10 @@
 	#main_menu_button{
 		display: none;
 	}
+	.row form {
+		margin-right: auto;
+		margin-left: auto;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -43,24 +47,45 @@
 		width: 767px;
 	}
 	.slider_bar {
-		padding-top: 40px;
+		width: 200px;
+		padding-top: 100px;
 	}
-	.text_wrappmain_lister> p.small_t {
+	.text_wrapper {
+		padding-top: 30px;
+		padding-left: 30px;
+	}
+	.text_wrapper p.small_t {
 		font-size: 13pt;
 	}
-	#main_menu_button{
+	#main_menu_button {
+		display: block;
+	}
+	.menu_list, .left_section {
 		display: none;
+	}
+	.slider_nav_button {
+		height: 20px;
+		width: 20px;
+	}
+	nav.footer_menu ul li {
+		width: 100%;
+		height: 90px;
+		padding: 0px;
+	}
+	nav.footer_menu ul li a {
+		text-align: center;
+		padding: 0px;
+		background-position: center center;
+		background-origin: content-box;
 	}
 
 }
 
 /* Small Devices, Phones */
 @media only screen and (max-width : 768px) {
-	.menu_list, .left_section {
-		display: block;
-	}
 	#main_menu_button{
 		display: block;
+		border: 0px;
 	}
 	.container {
 		width: 100%;
@@ -68,7 +93,7 @@
 		margin: 0px;
 	}
 	.text_wrapper {
-		padding-top: 20px;
+		padding-top: 30px;
 		padding-left: 20px;
 	}
 	.text_wrapper > p.large_t {
@@ -76,16 +101,7 @@
 	}
 	.slider_bar {
 		width: 200px;
-		padding-top: 40px;
-	}
-	nav.footer_menu ul li {
-		width: 100%;
-		height: 90px;
-	}
-	nav.footer_menu ul li a {
-		text-align: center;
-		background-position: center center;
-		background-origin: content-box;
+		padding-top: 60px;
 	}
 	.slider_nav_button {
 		border-width: 1px;
@@ -98,7 +114,6 @@
 	}
 	nav.ul_opened {
 		background-color: #fff;
-
 		display: block;
 	}
 	.ul_opened {
@@ -119,5 +134,31 @@
 		background-color: #f29700;
 		color: #fff;
 		transition: 0.4s;
+	}
+	/*.........................*/
+
+}
+@media only screen and (max-width : 480px) {
+	.slider_bar {
+		width: 180px;
+		padding-top: 20px;
+	}
+	.slider_nav_button {
+		padding: 0px;
+		margin: 0px;
+		height: 30px;
+		width: 30px;
+	}
+	.text_wrapper > p.large_t {
+		font-size: 25pt;
+	}
+	.text_wrapper p.small_t {
+		font-size: 12pt;
+	}
+	.text_wrapper {
+		text-align: center;
+	}
+	.competitions {
+		margin: 0 auto;
 	}
 }
