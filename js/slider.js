@@ -1,9 +1,9 @@
 ﻿{
 	function Slider() {
-		this.currentSlide = document.getElementById('active_slide');
+		this.currentSlide = document.getElementById('active-slide');
 		this.slides = document.getElementsByClassName('slide');
-		this.currentButton = document.getElementById('active_button');
-		this.buttons = document.getElementsByClassName('slider_nav_button');
+		this.currentButton = document.getElementById('active-button');
+		this.buttons = document.getElementsByClassName('slider-nav-button');
 	}
 
 	function initSlider(){
@@ -23,8 +23,8 @@
 		}, 2500);
 	}
 	Slider.prototype.getCurrentValues = function() {
-		this.currentSlide = document.getElementById('active_slide');
-		this.currentButton = document.getElementById('active_button');
+		this.currentSlide = document.getElementById('active-slide');
+		this.currentButton = document.getElementById('active-button');
 		var slidesArray = this.slides;
 		var buttonsArray = this.buttons;
 		for (var i = 0; i < slidesArray.length; i++) {
@@ -55,8 +55,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[i];
 					this.currentButton = buttonsArray[i];
-					this.currentSlide.id = 'active_slide';
-					this.currentButton.id = 'active_button';
+					this.currentSlide.id = 'active-slide';
+					this.currentButton.id = 'active-button';
 					break;
 				} 
 				else if( buttonsArray[i] != buttonsArray[buttonsArray.length-1] ) {
@@ -64,8 +64,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[i+1];
 					this.currentButton = buttonsArray[i+1];
-					this.currentSlide.id = 'active_slide';
-					this.currentButton.id = 'active_button';
+					this.currentSlide.id = 'active-slide';
+					this.currentButton.id = 'active-button';
 					break;
 				}
 				if ( this.currentButton == buttonsArray[buttonsArray.length-1] ) {
@@ -73,8 +73,8 @@
 					this.currentButton.id = ' ';
 					this.currentSlide = slidesArray[0];
 					this.currentButton = buttonsArray[0];
-					this.currentSlide.id = 'active_slide';
-					this.currentButton.id = 'active_button';
+					this.currentSlide.id = 'active-slide';
+					this.currentButton.id = 'active-button';
 					break;
 				}
 			}
@@ -90,7 +90,7 @@
 
 	function clickEvent( bombitSlider ){
 		bombitSlider.currentButton = event.target;
-		document.getElementById('active_button').id = ' ';
+		document.getElementById('active-button').id = ' ';
 		clearInterval(bombitSlider.sliderTimer);
 		bombitSlider.coverCurrentSlide();
 		bombitSlider.swithcSlide();

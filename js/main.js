@@ -1,15 +1,15 @@
 ﻿{
 	function menu(){
-		var click_button = document.getElementById('main_menu_button');
-		click_button.addEventListener('click', function(){
-			changeStyle(click_button);
+		var clickButton = document.getElementById('main-menu-button');
+		clickButton.addEventListener('click', function(){
+			changeStyle(clickButton);
 		},false);
 	}
 	function changeStyle(){
-		if ( document.getElementById('menu_list') ) {
-			document.getElementById('menu_list').id = 'ul_opened';
+		if ( document.getElementById('menu-list') ) {
+			document.getElementById('menu-list').id = 'ul-opened';
 		} else {
-			document.getElementById('ul_opened').id = 'menu_list';		
+			document.getElementById('ul-opened').id = 'menu-list';		
 		}
 	}
 }
