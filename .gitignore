@@ -1,4 +1,6 @@
-﻿*.log
+﻿#files
+
+*.log
 *.txt
 *.sql
 *.cfg
@@ -6,6 +8,11 @@
 *.zip
 *.psd
 *.rar
+*.zip
+
+
+#folders
+
 
 /bitrix/php_interface/dbconn.php
 /bitrix/.settings.php
