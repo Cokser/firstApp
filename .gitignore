@@ -1,17 +1,18 @@
-﻿#files
+﻿#files--
 
 *.log
 *.txt
 *.sql
 *.cfg
 *.pdf
-*.zip
 *.psd
+
+#archives--
 *.rar
 *.zip
 
 
-#folders
+#folders--
 
 
 /bitrix/php_interface/dbconn.php
