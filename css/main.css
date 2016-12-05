@@ -37,7 +37,7 @@ body {
 .top-header {
 	height: 110px;
 }
-.header-topline {
+.header-section {
 	background-color: #fff;
 	padding-top: 26px;
 }
@@ -51,7 +51,7 @@ body {
 hgroup {
 	float: left;
 }
-h1 {
+.left-section h1 {
 	margin: 0 auto;
 	font-size: 24pt;
 	font-family: "Arial";
@@ -59,7 +59,7 @@ h1 {
 	top: 5px;
 	position: relative;
 }
-h2 {
+.left-section h2 {
 	margin: 0 auto;
 	font-size: 12pt;
 	font-family: "Arial";
@@ -68,18 +68,18 @@ h2 {
 	bottom: 5px;
 	position: relative;
 }
-form {
+.left-section form {
 	padding-top: 19px;
 	float: right;
 }
-form input {
+.left-section form input {
 	width: 240px;
 	height: 23px;
 	border-width: 1px;
 	padding: 0;
 	border-radius: 3px;
 }
-form button {
+.left-section form button {
 	top: 0;
 	right: 0;
 	margin-left: 5px;

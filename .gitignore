@@ -1,19 +1,24 @@
-*.log
+﻿*.log
 *.txt
 *.sql
+*.cfg
+*.pdf
+*.zip
+*.psd
 
-/.idea/
+/bitrix/php_interface/dbconn.php
+/bitrix/.settings.php
 
-/video/
-
-/bitrix/cache/
+*cache*/
 /bitrix/managed_cache/
 /bitrix/cache_image/
 /bitrix/backup/
-/bitrix/php_interface/
+/bitrix/otp/
 /bitrix/html_pages/
+/bitrix/stack_cache/
+/bitrix/tmp/
+/bitrix/updates/
 
-/upload/resize_cache/
-/upload/tmp/
+/upload/
 
-/bitrix/.settings.php
+/.idea/
