@@ -48,7 +48,7 @@ body {
 .logo {
 	float: left;
 }
-hgroup {
+.left-section hgroup {
 	float: left;
 }
 .left-section h1 {
@@ -68,7 +68,7 @@ hgroup {
 	bottom: 5px;
 	position: relative;
 }
-.left-section form {
+.header-section form {
 	padding-top: 19px;
 	float: right;
 }
@@ -79,7 +79,7 @@ hgroup {
 	padding: 0;
 	border-radius: 3px;
 }
-.left-section form button {
+.header-section form button {
 	top: 0;
 	right: 0;
 	margin-left: 5px;
