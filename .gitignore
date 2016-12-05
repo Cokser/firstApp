@@ -5,6 +5,7 @@
 *.pdf
 *.zip
 *.psd
+*.rar
 
 /bitrix/php_interface/dbconn.php
 /bitrix/.settings.php
