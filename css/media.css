@@ -2,7 +2,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1280px) {
-	.container {
+	.container , .image_wrapper, #bimbits-slider .slide, #bimbits-slider img{
 		width: 1280px;
 	}
 	#main_menu_button{
@@ -12,13 +12,14 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1279px){
-	.container {
+	.container , .image_wrapper, #bimbits-slider .slide, #bimbits-slider img{
 		width: 1024px;
+		overflow: hidden;
 	}
-	.text_wrapper > p.large_t {
+	.text_wrapper p.large_t {
 		font-size: 40pt;
 	}
-	.text_wrapper> p.small_t {
+	.text_wrapper p.small_t {
 		font-size: 15pt;
 	}
 	nav.footer_menu ul li {
@@ -28,6 +29,10 @@
 	nav.footer_menu ul li a {
 		padding-top: 20px;
 		padding-left: 40px;
+	}
+	.text_wrapper {
+		padding-top: 60px;
+		padding-left: 100px;
 	}
 	.slider_bar {
 		padding-top: 60px;
@@ -43,29 +48,44 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 1023px) {
-	.container {
+	.container, .image_wrapper, #bimbits-slider .slide, #bimbits-slider img {
 		width: 767px;
+		overflow: hidden;
 	}
 	.slider_bar {
 		width: 200px;
-		padding-top: 100px;
+		padding-top: 10px;
 	}
 	.text_wrapper {
-		padding-top: 30px;
-		padding-left: 30px;
+		padding: 10px 0 0 ;
+		left: 0px;
+		right: 0px;
+
+		text-align: center;
+	}
+	.competitions {
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+		margin: 0 auto;
 	}
 	.text_wrapper p.small_t {
 		font-size: 13pt;
 	}
 	#main_menu_button {
 		display: block;
+		width: 100%;
+		background-repeat: no-repeat;
 	}
-	.menu_list, .left_section {
+	#menu_list, .left_section {
 		display: none;
 	}
 	.slider_nav_button {
 		height: 20px;
 		width: 20px;
+	}
+	nav.footer_menu ul {
+		height: 100%;
 	}
 	nav.footer_menu ul li {
 		width: 100%;
@@ -78,6 +98,32 @@
 		background-position: center center;
 		background-origin: content-box;
 	}
+	nav#ul_opened {
+		background-color: #fff;
+		display: block;
+	}
+	#ul_opened {
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+		list-style-type: none;
+	}
+	#ul_opened li {
+		width: 100%;
+		padding: 0px;
+	}
+	#ul_opened li .active {
+		background-color: #3c4148;
+		color: #fff;
+	}
+	#ul_opened li a{
+		width: 100%;
+	}
+	#ul_opened a:hover{
+		background-color: #f29700;
+		color: #fff;
+		transition: 0.4s;
+	}
 
 }
 
@@ -87,21 +133,25 @@
 		display: block;
 		border: 0px;
 	}
-	.container {
+	.container , #bimbits-slider, #bimbits-slider img, #bimbits-slider .slide , #active_slide, .image_wrapper {
 		width: 100%;
+		height: 100%;
 		padding: 0px;
 		margin: 0px;
 	}
 	.text_wrapper {
-		padding-top: 30px;
-		padding-left: 20px;
+		left: 0px;
+		right: 0px;
 	}
-	.text_wrapper > p.large_t {
+	.text_wrapper p.large_t {
 		font-size: 30pt;
+	}
+	.text_wrapper p.small_t {
+		display: none;
 	}
 	.slider_bar {
 		width: 200px;
-		padding-top: 60px;
+		padding-top: 10px;
 	}
 	.slider_nav_button {
 		border-width: 1px;
@@ -112,36 +162,14 @@
 		width: 25px;
 		margin-right: 10px;
 	}
-	nav.ul_opened {
-		background-color: #fff;
-		display: block;
-	}
-	.ul_opened {
-		text-align: center;
-		padding: 0px;
-		margin: 0px;
-		list-style-type: none;
-	}
-	.ul_opened li {
-		width: 100%;
-		padding: 0px;
-	}
-	.ul_opened li .active {
-		background-color: #3c4148;
-		color: #fff;
-	}
-	.ul_opened a:hover{
-		background-color: #f29700;
-		color: #fff;
-		transition: 0.4s;
-	}
+
 	/*.........................*/
 
 }
 @media only screen and (max-width : 480px) {
 	.slider_bar {
 		width: 180px;
-		padding-top: 20px;
+		padding-top: 5px;
 	}
 	.slider_nav_button {
 		padding: 0px;
@@ -149,16 +177,14 @@
 		height: 30px;
 		width: 30px;
 	}
-	.text_wrapper > p.large_t {
-		font-size: 25pt;
+	.text_wrapper {
+		left: 0px;
+		right: 0px;
+	}
+	.text_wrapper p.large_t {
+		font-size: 30pt;
 	}
 	.text_wrapper p.small_t {
-		font-size: 12pt;
-	}
-	.text_wrapper {
-		text-align: center;
-	}
-	.competitions {
-		margin: 0 auto;
+		display: none;
 	}
 }

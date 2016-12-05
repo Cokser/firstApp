@@ -6,11 +6,10 @@
 		},false);
 	}
 	function changeStyle(){
-		if ( document.getElementsByClassName('menu_list')[0] ) {
-			document.getElementsByClassName('menu_list')[0].className = 'ul_opened';
+		if ( document.getElementById('menu_list') ) {
+			document.getElementById('menu_list').id = 'ul_opened';
 		} else {
-			document.getElementsByClassName('ul_opened')[0].className = 'menu_list';		
+			document.getElementById('ul_opened').id = 'menu_list';		
 		}
 	}
-	menu();
 }

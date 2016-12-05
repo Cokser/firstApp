@@ -16,7 +16,14 @@
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<!-- <script type="text/javascript" src="js/slides.json"></script> -->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+		<script type="text/javascript">
+		window.onload = function() {
+			initSlider();
+			menu();
+		};
+	</script>
 	
 
 </head>
@@ -50,7 +57,7 @@
 				<div class="col-md-12">
 					<nav class="main_menu clearfix">
 					<button id="main_menu_button"></button>
-						<ul class="menu_list">
+						<ul id="menu_list">
 							<li><a href="#">О компании</a></li>
 							<li><a href="#">Услуги</a></li>
 							<li><a href="#">Объекты</a></li>
@@ -66,37 +73,58 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<div id="slider">
-						<div class="slider_wrapper" id="slide-1">
-							<div class="wrapper">
-								<div class="section">
-									<div class="text_wrapper">
-										<figure class="competitions">
-											<p>НАШИ КОМПЕТЕНЦИИ</p>
-										</figure>
-										<p class="large_t">Объекты<br/>химимческой<br/>промышленности</p>
-										<p class="small_t">Важнейшим преимуществом компании является способность<br/> проектировать и строить «под ключ». При этом данные процессы ведутся <br/> одновременно, что позволяет заказчику значительно сократить общий<br/> строительный цикл объекта.</p>
-									</div>	
-									<div class="slider_bar">
-										<ul>
-											<li>
-												<button class="slider_nav_button" id="active_button"></button>
-											</li>
-											<li>
-												<button class="slider_nav_button"></button>
-											</li>
-											<li>
-												<button class="slider_nav_button"></button>
-											</li>
-											<li>
-												<button class="slider_nav_button"></button>
-											</li>
-											<li>
-												<button class="slider_nav_button"></button>
-											</li>
-										</ul>
-									</div>
-								</div>
+					<div class="slider-wrapper">
+						<div id="bimbits-slider">
+							<div class="slide" id="active_slide">
+								<img src="img/1.png" alt="" class="slider-image">
+									<div class="image_wrapper"></div>
+								</img>
+							</div>
+							<div class="slide">
+								<img src="img/2.jpg" alt="" class="slider-image">
+									<div class="image_wrapper"></div>
+								</img>
+							</div>
+							<div class="slide">
+								<img src="img/3.jpg" alt="" class="slider-image">
+									<div class="image_wrapper"></div>
+								</img>
+							</div>
+							<div class="slide">
+								<img src="img/4.jpg" alt="" class="slider-image">
+									<div class="image_wrapper"></div>
+								</img>
+							</div>
+							<div class="slide">
+								<img src="img/5.jpg" alt="" class="slider-image">
+									<div class="image_wrapper"></div>
+								</img>
+							</div>
+							<div class="text_wrapper">
+								<figure class="competitions">
+									<p>НАШИ КОМПЕТЕНЦИИ</p>
+								</figure>
+								<p class="large_t">Объекты<br/>химимческой<br/>промышленности</p>
+								<p class="small_t">Важнейшим преимуществом компании является способность<br/> проектировать и строить «под ключ». При этом данные процессы ведутся <br/> одновременно, что позволяет заказчику значительно сократить общий<br/> строительный цикл объекта.</p>
+							</div>	
+							<div class="slider_bar">
+								<ul>
+									<li>
+										<button class="slider_nav_button" id="active_button"></button>
+									</li>
+									<li>
+										<button class="slider_nav_button"></button>
+									</li>
+									<li>
+										<button class="slider_nav_button"></button>
+									</li>
+									<li>
+										<button class="slider_nav_button"></button>
+									</li>
+									<li>
+										<button class="slider_nav_button"></button>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -129,8 +157,6 @@
 			</div>
 		</div>
 	<hr>
-	<script src="js/main.js"></script>
-	<script src="js/slider.js"></script>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
