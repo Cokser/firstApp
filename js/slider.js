@@ -51,7 +51,6 @@
 		var buttonsArray = this.buttons;
 
 		for (var i = 0; i < buttonsArray.length; i++) {
-					// console.log( this.currentButton );
 			if ( buttonsArray[i] == this.currentButton) {
 				if ( this.currentSlide.id != slidesArray[i].id ) {
 					this.currentSlide.id = ' ';
@@ -95,9 +94,7 @@
 	function clickEvent( clickedButton, bombitSlider ){
 		var tempButton = bombitSlider.currentButton;
 		bombitSlider.currentButton = clickedButton;
-		console.log( tempButton.id );
 		tempButton.id = ' ';
-		console.log( tempButton.id );
 		clearInterval(bombitSlider.sliderTimer);
 		bombitSlider.coverCurrentSlide();
 		bombitSlider.swithcSlide();
